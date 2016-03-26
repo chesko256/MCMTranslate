@@ -21,5 +21,5 @@ Instructions
 9. In the Google Developer Console slide-out menu, go to Billing and create a billing account.
 10. **IMPORTANT**: In the sidebar, go to Budgets and Alerts and create a budget for the project. I set my budget at $10, but you can set yours at whatever value you like. Go to https://cloud.google.com/translate/v2/pricing to view pricing details for using the Translate API. As of this writing, it costs $20 per 1 million characters of text. For reference, each time I translate Wearable Lanterns, it costs me about 20 cents. I would have to translate Wearable Lanterns 45 times to exceed my quota. Given that MCM translation is the absolute last thing I do before releasing an update, and only if the MCM changed, it would take a while before I exceeded this quota.
 11. Run the script.    
-    python MCMTranslate.py mymod_english.txt
+    `python MCMTranslate.py mymod_english.txt`    
 Your translation files will be output to the same directory as MCMTranslate.
