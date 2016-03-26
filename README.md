@@ -27,7 +27,7 @@ Using the Google Translate API **costs money**. How much it costs is dependent o
 3. Install `pip`, if necessary. https://pip.pypa.io/en/stable/installing/
 4. Install the Google Translate API Client Library for Python.    
 
-    pip install --upgrade google-api-python-client
+    `pip install --upgrade google-api-python-client`
 
 5. Set up a Google Developer Console project named 'mod translate', or whatever you like. https://console.developers.google.com. Within the project, create a new application. Name it whatever you like.
 6. In the Google Developer Console slide-out menu, go to *API Manager > Translate API*, and select *Enable*.
@@ -37,7 +37,7 @@ Using the Google Translate API **costs money**. How much it costs is dependent o
 10. **IMPORTANT:** In the sidebar, go to *Budgets and Alerts* and create a budget for the project. This prevents you from accidentally spending more money when using the application than you intended. I set my budget at $10, but you can set yours at whatever value you like. Go to https://cloud.google.com/translate/v2/pricing to view pricing details for using the Translate API. As of this writing, it costs $20 per 1 million characters of text.
 11. Run the script.  
 
-    python MCMTranslate.py mymod_english.txt
+    `python MCMTranslate.py mymod_english.txt`
 
 Your translation files will be output to the same directory as MCMTranslate.
 
