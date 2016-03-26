@@ -11,10 +11,10 @@ This utility translates an English SkyUI MCM translation file into the following
 * Russian
 * Spanish
 
-**Warning**    
+####Warning
 Using the Google Translate API **costs money**. However, I've found that using it saves so much time when releasing my projects that the cost is negligible. Be aware of the costs associated with using the Google Translate API and **set up a budget** in the Google Developer Console. If this all sounds scary, it's probably best that you not proceed.
 
-**Usage**    
+###Usage  
 
     python MCMTranslate.py [English MCM translation file] | [--help]
 
