@@ -12,7 +12,7 @@ This utility translates an English SkyUI MCM translation file into the following
 * Spanish
 
 ###Warning
-Using the Google Translate API **costs money**. However, I've found that using it saves so much time when releasing my projects that the cost is negligible. Be aware of the costs associated with using the Google Translate API and **set up a budget** in the Google Developer Console. If this all sounds scary, it's probably best that you not proceed.
+Using the Google Translate API **costs money**. How much it costs is dependent on how much text in your MCM files needs to be translated. However, I've found that using it saves so much time when releasing my projects that the cost is negligible. Be aware of the costs associated with using the Google Translate API and **set up a budget** in the Google Developer Console. If this all sounds scary, it's probably best that you not proceed.
 
 ###Usage
 
@@ -42,7 +42,31 @@ Using the Google Translate API **costs money**. However, I've found that using i
 Your translation files will be output to the same directory as MCMTranslate.
 
 ###Notes
-For reference, each time I translate Wearable Lanterns using MCMTranslate, it costs me about $1.04 (or, 13 cents per language). I would have to translate Wearable Lanterns 9 times to meet my budget. Given that MCM translation is the absolute last thing I do before releasing an update, and only if the MCM changed, it would take a while before I exceeded this quota.
+Google has a separate quota, which is "characters per 100 seconds". It defaults to 10,000. If you run this utility back-to-back quickly, you can easily outstrip this quota with large MCM translation files.
+
+This utility has a lot of room for improvement, but it suits my personal needs. This utility could be improved by: handling network communication errors, allowing the user to translate one language at a time using a command line flag, and so on. Feel free to create a branch and make enhancements.
+
+Each time I translate Wearable Lanterns using MCMTranslate, it costs me about $1.04 (or, 13 cents per language). I would have to translate Wearable Lanterns 9 times to meet my budget. Given that MCM translation is the absolute last thing I do before releasing an update, and only if the MCM changed, it would take a while before I exceeded this quota.
 
 ###Disclaimer
-THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+MIT License
+
+Copyright (c) 2016 Chesko
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
