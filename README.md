@@ -42,7 +42,7 @@ Using the Google Translate API **costs money**. How much it costs is dependent o
 Your translation files will be output to the same directory as MCMTranslate.
 
 ###Notes
-Google has a separate quota, which is "characters per 100 seconds". It defaults to 10,000. If you run this utility back-to-back quickly, you can easily outstrip this quota with large MCM translation files.
+Google has two default quotas: a daily character limit (2 million), and a rate quota in "characters per 100 seconds" (10,000). If you run this utility back-to-back quickly, you can easily outstrip the rate quota with large MCM translation files. You may have to wait a couple of minutes to run it again.
 
 This utility has a lot of room for improvement, but it suits my personal needs. This utility could be improved by: handling network communication errors, allowing the user to translate one language at a time using a command line flag, and so on. Feel free to create a branch and make enhancements.
 
